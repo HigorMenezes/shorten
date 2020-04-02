@@ -1,11 +1,15 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
+import GlobalStyle from "../styles/GlobalStyle";
 
-import theme from "../style/theme";
+import Shorten from "../screens/Shorten";
+
+import theme from "../styles/theme";
 
 const App = () => (
   <ThemeProvider theme={theme}>
-    <div>Hello</div>
+    <GlobalStyle />
+    <Shorten />
   </ThemeProvider>
 );
 
