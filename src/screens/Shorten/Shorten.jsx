@@ -1,15 +1,20 @@
 import React from "react";
 
-import Main from "../../layouts/Main";
+import ShareLinkIcon from "../../components/ShareLinkIcon";
+import Input from "../../components/Input";
+import Button from "../../components/Button";
+import Default from "../../layouts/Default";
+
 import { Container } from "./Shorten.style";
 
 const Shorten = () => (
-  <Main>
+  <Default>
     <Container>
-      <input />
-      <button type="button">Shorten it!</button>
+      <ShareLinkIcon />
+      <Input />
+      <Button>Shorten it!</Button>
     </Container>
-  </Main>
+  </Default>
 );
 
 export default Shorten;
